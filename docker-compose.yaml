@@ -21,6 +21,7 @@ services:
 
 
 ---
+version: '3.4'
 services:
   web:
     build: .
