@@ -1,5 +1,5 @@
 ---
-# this docker-composefile create two containers
+# this docker-composefile create two service/containers
 version: '3'
 services:
   mongodb:
