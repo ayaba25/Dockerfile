@@ -1,0 +1,26 @@
+---
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/code
+  redis:
+    image: redis
+    
+    
+ ---
+ version: '3.4'
+ services:
+   node-hello:
+     image: node-hello
+     build: .
+     environment:
+       NODE_ENV: development
+     ports:
+       - 3000
+       - 9229:9229
+       
+---
+      
